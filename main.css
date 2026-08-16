@@ -36,11 +36,11 @@ h2{
     color:palevioletred;
     padding-top:2%;
     padding-bottom:10%;
-    padding-left:5%;
+    padding-left:40%;
 }
 
-.artist-description{
-    grid-area:mitte;
+.artist-introduction{
+    grid-area:links;
     font-size:1.5rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:darkslategrey;
@@ -49,27 +49,42 @@ h2{
     padding-left:1%;
 }
 
-.nav-links{
+.artist-description{
+    grid-area:links;
+    font-size:1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:darkslategrey;
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left:1%;
+}
+.website-rubriken{
     grid-area:rechts;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color:#333;
     color:white;
 }
 
-.nav-links a{
+.website-rubriken a{
     display:block;
     padding:15px;
     color:white;
     text-decoration:none;
 }
 
-.nav-links a:hover{
+.website-rubriken a:hover{
     background-color:#111;
 }
 
-.titelbild{
-    z-index:0;
-    width:100%;
+.article-text{
+    font-size:2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:darkslategrey;
+    margin-top:10%;
+    padding-left:10%;
+    padding-right:15%;
+    padding-top:0;
+    padding-bottom:10%;
 }
 
 .block-sections{
@@ -87,21 +102,6 @@ h2{
     padding-right:7%;
     padding-top:10%;
     padding-bottom:0;
-}
-
-.article-text{
-    font-size:2rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
-    margin-top:10%;
-    padding-left:10%;
-    padding-right:15%;
-    padding-top:0;
-    padding-bottom:10%;
-}
-
-.gamescombild{
-    width:100%;
 }
 
 .ueberschrift-section2{
@@ -168,14 +168,6 @@ h2{
     margin-top:10%;
     margin-bottom:10%;
     list-style:none;
-}
-
-.spiel{
-    background-color:white;
-}
-
-.fotos-spiele{
-    width:100%;
 }
 
 .spielbeschreibungen{
@@ -246,11 +238,6 @@ h2{
 
 .rueckblick{
     width:100%;
-}
-
-.logo2{
-    z-index:1;
-    width:20%;
 }
 
 footer{
