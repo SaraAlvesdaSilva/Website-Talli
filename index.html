@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gamiversum</title>
+  <meta name="description" content="Tauch ein in spannende, neue Gaming-Welten und teile deine Begeisterung mit anderen Gleichgesinnten live vor Ort. Tauche ein in spannende, neue Gaming-Welten! Erlebe mitreißende Geschichten, atemberaubende Designs, faszinierende Kreaturen und Avatare, die euch ganz neue Horizonte eröffnen!">
+  <link rel="stylesheet" href="main.css">
+  <style>
+    .invisible {
+      display: none;
+    }
+  </style>
+  
+  <script>
+    function filter(tag) {
+      const liste = document.getElementsByTagName('li')
+  
+        for (let i = 0; i < liste.length; i++) {
+          const genre = liste[i]
+  
+        if (tag == 'alles') {
+          genre.classList.remove('invisible')
+        } else {
+            const tag2 = genre.dataset.tag
+              if (tag != tag2) {
+                genre.classList.add('invisible')
+              } else {
+                  genre.classList.remove('invisible')
+                }
+          }
+        }
+    }
+  </script>
+
+</head>
