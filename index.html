@@ -1,34 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gamiversum</title>
-  <meta name="description" content="Tauch ein in spannende, neue Gaming-Welten und teile deine Begeisterung mit anderen Gleichgesinnten live vor Ort. Tauche ein in spannende, neue Gaming-Welten! Erlebe mitreißende Geschichten, atemberaubende Designs, faszinierende Kreaturen und Avatare, die euch ganz neue Horizonte eröffnen!">
+  <title>ThisisTalli</title>
+  <meta name="description" content="My name is Talli and I make my own music. I hope you all like it. Check it out!">
   <link rel="stylesheet" href="main.css">
   <style>
     .invisible {
       display: none;
     }
   </style>
-  
-  <script>
-    function filter(tag) {
-      const liste = document.getElementsByTagName('li')
-  
-        for (let i = 0; i < liste.length; i++) {
-          const genre = liste[i]
-  
-        if (tag == 'alles') {
-          genre.classList.remove('invisible')
-        } else {
-            const tag2 = genre.dataset.tag
-              if (tag != tag2) {
-                genre.classList.add('invisible')
-              } else {
-                  genre.classList.remove('invisible')
-                }
-          }
-        }
-    }
-  </script>
-
 </head>
+
+  <body>
+    <header>
+      <h1 class="visible">ThisisTalli</h1>
+    </header>
+  </body>
+
+<footer>
+  <p>&copy; 2023 ThisisTalli. All rights reserved.</p>
+</footer>
+
+</html>
