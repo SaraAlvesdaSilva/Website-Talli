@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      console.log('script has been read')
+
+      function convertToFranken() {
+        const priceEuro = document.getElementById('euro').value
+
+        const priceFranken = priceEuro * 0.9333
+
+        document.getElementById('Franken').innerText = priceFranken
+
+        if (priceEuro > 100) {
+          document.getElementById('kommentar').innerText = "Dont do dat! Das teuer!"
+        } else {
+          document.getElementById('kommentar').innerText = "Si, do dat! Es ist ein Schnäppschen!"
+        }
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <h1>Währungsrechner Euro-Franken</h1>
+    <input id="euro" type="number">
+    <button type="button" onclick="convertToFranken()">In Franken konvertieren</button>
+    <h2>Ergebnis</h2>
+    <div id="Franken"></div>
+    <div id="kommentar"></div>
+
+  </body>
+</html>

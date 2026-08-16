@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function convert() {
+        const zahl = document.getElementById('zahl').value
+        const studiengänge = [ "Medien- und Kommunikationswissenschaft", "Psychologie", "Portugiesisch", "Politikwissenschaft", "Medizin", "Jura", "BWL" ]
+
+
+        if (zahl <= studiengänge.length) {
+          document.getElementById('ergebnis').innerText = studiengänge[zahl]
+        } else {
+          document.getElementById('ergebnis').innerText = 'Whuuuupie!!!'
+        }
+      }
+    </script>  
+  </head>
+
+  <body>
+    <h1>Studiengangsrechner</h1>
+
+    <input id="zahl" type="number">
+    <button onclick="convert()">Konvertieren</button>
+    <div id="ergebnis"></div>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+      .invisible {
+        display: none;
+      }
+		</style>
+
+		<script>
+      function filter(tag) {
+        const liste = document.getElementsByTagName('li')
+
+        for (let i = 0; i < liste.length; i++) {
+          const getränke = liste[i]
+
+          if (tag == 'alles') {
+            getränke.classList.remove('invisible')
+          } else {
+            const tag2 = getränke.dataset.tag
+            if (tag != tag2) {
+              getränke.classList.add('invisible')
+            } else {
+              getränke.classList.remove('invisible')
+            }
+          }
+        }
+
+      }
+		</script>
+	</head>
+
+	<body>
+		<h1>Die besten Getränke</h1>
+		<ul>
+			<li data-tag="warm">Kaffee</li>
+			<li data-tag="warm">Kakao</li>
+			<li data-tag="kalt">Caipirinha</li>
+			<li data-tag="kalt">Mojito</li>
+			<li data-tag="warm">Tee</li>
+            <li data-tag="warm">Glühwein</li>
+            <li data-tag="kalt">Cola</li>
+            <li data-tag="kalt">Limonade</li>
+
+		</ul>
+
+		<button onclick="filter('warm')">Warme Getränke</button>
+		<button onclick="filter('kalt')">Kalte Getränke</button>
+        <button onclick="filter('alles')">Alles</button>
+
+	</body>
+</html>
