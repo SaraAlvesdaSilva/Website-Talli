@@ -5,16 +5,20 @@ body{
 
 header{
     display:grid;
-    grid-template-columns:1fr 2fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
     grid-template-rows:1fr;
     grid-template-areas:
     "links mitte rechts";
 }
 
+.content{
+    background-color:palevioletred;
+}
+
 .profile-image{
     grid-area:links;
     z-index:1;
-    width:10%;
+    width:12.1%;
     position:fixed;
 }
 
@@ -23,48 +27,56 @@ h1{
     font-size:2.5rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:palevioletred;
-    padding-top:2%;
-    padding-bottom:2%;
-    padding-left:0.5%;
+    padding-left:35%;
 }
 
 h2{
+    grid-area:rechts;
     font-size:1rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:palevioletred;
-    padding-top:2%;
-    padding-bottom:10%;
-    padding-left:40%;
+    padding-left:35%;
 }
 
 .artist-introduction{
-    grid-area:mitte;
     font-size:1.5rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:darkslategrey;
-    margin-top:10%;
+    padding-left:20%;
+    padding-right:10%;
+    padding-top:2%;
+    padding-bottom:2%;
+}
+
+.books{
+    font-weight:bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(37, 91, 93);
+    background-color:darkgrey;
+    font-size:2rem;
+    width:100%;
     padding-left:10%;
-    padding-right:15%;
-    padding-top:0;
+    padding-right:10%;
+}
+
+.article-text{
+    font-size:2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:darkslategrey;
+    background-color:teal;
+    padding-left:10%;
+    padding-right:10%;
+    padding-top:2%;
     padding-bottom:10%;
 }
 
-.artist-description{
-    grid-area:mitte;
-    font-size:1rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:darkslategrey;
-    margin-top:10%;
-    padding-left:10%;
-    padding-right:15%;
-    padding-top:0;
-    padding-bottom:10%;
-}
 .website-rubriken{
     grid-area:rechts;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color:#333;
+    background-color:palevioletred;
     color:white;
+    list-style:none;
+    padding-left:10%;
 }
 
 .website-rubriken a{
@@ -78,52 +90,48 @@ h2{
     background-color:#111;
 }
 
-.article-text{
-    font-size:2rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.artist-description{
+    grid-area:mitte;
+    font-size:1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:darkslategrey;
-    margin-top:10%;
     padding-left:10%;
     padding-right:15%;
-    padding-top:0;
-    padding-bottom:10%;
+    padding-top:2%;
+    padding-bottom:2%;
 }
 
-.block-sections{
-    background-color:rgba(128, 128, 128, 0.219);
+.mymusic{
+    grid-area:mitte;
+    font-size:1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:darkslategrey;
     padding-left:10%;
-    padding-right:10%;
-}
-
-.ueberschriften-sections{
-    font-size:3rem;
-    color:white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style:italic;
-    padding-left:10%;
-    padding-right:7%;
-    padding-top:10%;
-    padding-bottom:0;
-}
-
-.ueberschrift-section2{
-    font-size:3rem;
-    color:white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style:italic;
-    padding-left:7%;
     padding-right:15%;
-    padding-top:10%;
-    padding-bottom:0;
+    padding-top:2%;
+    padding-bottom:2%;
 }
 
-.letsplay{
-    font-size:2rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight:bold;
-    color:white;
-    padding-left:7%;
-    padding-right:5%;
+.mywriting{
+    grid-area:mitte;
+    font-size:1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:darkslategrey;
+    padding-left:10%;
+    padding-right:15%;
+    padding-top:2%;
+    padding-bottom:2%;
+}
+
+.myprojects{
+    grid-area:mitte;
+    font-size:1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:darkslategrey;
+    padding-left:10%;
+    padding-right:15%;
+    padding-top:2%;
+    padding-bottom:2%;
 }
 
 .spielauswahl-optionen{
