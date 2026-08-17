@@ -1,9 +1,14 @@
-.tickets-bilder{
+.body{
+    margin:0;
+    background-color:teal;
+}
+
+.kopfzeile{
     display:grid;
-    grid-template-columns:1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr;
     grid-template-rows:1fr;
     grid-template-areas:
-    'logo1 ticketmeme ticketbild';
+    'logo1 profile-picture';
 }
 
 .logo1{
@@ -12,10 +17,11 @@
 }
 
 .return{
-    background-color:white;
+    background-color:teal;
     border:none;
-    width:70%;
-    height:80%;
+    padding-top:8%;
+    padding-bottom:8%;
+    width:10%;
     @include center;
     transition:.6s;
     overflow:hidden;
@@ -26,7 +32,7 @@
         content:'';
         display:block;
         position:absolute;
-        background:white;
+        background:teal;
         opacity:.5;
         filter:blur(30px);
         transform:translateX(-100px)  skewX(-15deg);
@@ -35,13 +41,13 @@
         content:'';
         display:block;
         position:absolute;
-        background:lightgrey;
+        background:wheat;
         opacity:0;
         filter:blur(5px);
         transform:translateX(-100px) skewX(-15deg);
     }
     &:hover{
-        background:lightgrey;
+        background:wheat;
         cursor:pointer;
         &:before{
             transform:translateX(300px)  skewX(-15deg);  
@@ -56,64 +62,70 @@
     }
 }
 
-.ticketbild{
-    grid-area:ticketbild;
-    width:100%;
+.profile-picture{
+    width:30%;
     margin:0;
-}
-
-.ticketsmeme{
-    grid-area:ticketmeme;
-    width:50%;
-    padding-left:40%;
+    padding-left:70%;
 }
 
 .alltext{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:2fr;
+    grid-template-areas:
+    'short-stories book-projects';
     padding-left:6%;
+    background-color:wheat;
 }
 
 h1{
-    color:rgb(81, 0, 128);
+    grid-area:short-stories;
+    color:palevioletred;
     font-size:2rem;
+    font-weight:bold;
 }
 
 h2{
-    color:rgb(0, 217, 255);
+    grid-area:book-projects;
+    color:palevioletred;
     font-size:2rem;
+    font-weight:bold;
 }
 
-p{
-    color:darkgrey;
+.waehrungsrechner{
+    grid-area:short-stories;
+    color:palevioletred;
     font-size:2rem;
+    padding-top:50%;
 }
 
 button{
     font-weight:bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:rgb(37, 91, 93);
-    background-color:darkgrey;
+    color:teal;
+    background-color:wheat;
     font-size:100%;
-    width:40%;
+    width:60%;
     position:center;
 }
 
 @media screen and (min-width: 992px) {
-   .tickets-bilder{
+   .kopfzeile{
         display:grid;
-        grid-template-columns:1fr 1fr 1fr;
+        grid-template-columns:1fr 1fr;
         grid-template-rows:1fr;
         grid-template-areas:
-        'logo1 ticketmeme ticketbild';
+        'logo1 profile-picture';
     }
     
     .logo1{
         grid-area:logo1;
+        width:100%;
     }
     
     .return{
-        background-color:white;
-        width:30%;
-        border:none;
+        background-color:teal;
+        position:relative;
         @include center;
         transition:.6s;
         overflow:hidden;
@@ -124,7 +136,7 @@ button{
             content:'';
             display:block;
             position:absolute;
-            background:white;
+            background:teal;
             opacity:.5;
             filter:blur(30px);
             transform:translateX(-100px)  skewX(-15deg);
@@ -133,13 +145,13 @@ button{
             content:'';
             display:block;
             position:absolute;
-            background:lightgrey;
+            background:wheat;
             opacity:0;
             filter:blur(5px);
             transform:translateX(-100px) skewX(-15deg);
         }
         &:hover{
-            background:lightgrey;
+            background:wheat;
             cursor:pointer;
             &:before{
                 transform:translateX(300px)  skewX(-15deg);  
@@ -154,31 +166,38 @@ button{
         }
     }
     
-    .ticketbild{
-        grid-area:ticketbild;
-        width:50%;
-        padding-left:50%;
+    .profile-picture{
+        grid-area:profile-picture;
+        width:30%;
+        padding-left:70%;
     }
     
-    .ticketsmeme{
-        grid-area:ticketmeme;
-        width:20%;
-        padding-left:40%;
-    }
-    
-    h2{
-        font-size:3rem;
-    }
-    
-    h2{
-        font-size:3rem;
-    }
-
     .alltext{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:2fr;
+        grid-template-areas:
+        'short-stories book-projects';
         padding-left:6%;
     }
 
+    h1{
+        grid-area:short-stories;
+        font-size:3rem;
+    }
+    
+    h2{
+        grid-area:book-projects;
+        font-size:3rem;
+    }
+
+    .waehrungsrechner{
+        grid-area:short-stories;
+        font-size:3rem;
+        padding-top:30%;
+    }
+
     button{
-        width:20%;
+        width:30%;
     }
 }

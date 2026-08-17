@@ -5,10 +5,12 @@ body{
 
 header{
     display:grid;
+    background-color:teal;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows:1fr;
     grid-template-areas:
     "links mitte rechts";
+    position:fixed;
 }
 
 .content{
@@ -17,17 +19,15 @@ header{
 
 .profile-image{
     grid-area:links;
-    z-index:1;
-    width:12.1%;
-    position:fixed;
+    width:50%;
 }
 
 h1{
     grid-area:mitte;
-    font-size:2.5rem;
+    font-size:1.5rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:palevioletred;
-    padding-left:35%;
+    padding-left:20%;
 }
 
 h2{
@@ -35,7 +35,7 @@ h2{
     font-size:1rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:palevioletred;
-    padding-left:35%;
+    padding-left:45%;
 }
 
 .artist-introduction{
@@ -44,19 +44,88 @@ h2{
     color:darkslategrey;
     padding-left:20%;
     padding-right:10%;
-    padding-top:2%;
+    padding-top:15%;
     padding-bottom:2%;
 }
 
+.channels-links{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:2fr;
+    grid-template-areas:
+    "books youtube soundcloud"
+    "instagram tiktok tiktok";
+    width:100%;
+    margin:0;
+}
+
 .books{
+    grid-area:books;
     font-weight:bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:rgb(37, 91, 93);
-    background-color:darkgrey;
+    color:sienna;
+    background-color:palevioletred;
+    border:none;
+    font-size:1rem;
+    position:center;
+    margin-bottom:20%;
+    margin-top:20%;
+}
+
+.youtube{
+    grid-area:youtube;
+    font-weight:bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:sienna;
+    background-color:palevioletred;
+    border:none;
     font-size:2rem;
-    width:100%;
-    padding-left:10%;
-    padding-right:10%;
+    position:center;
+    margin-bottom:20%;
+    margin-top:20%;
+}
+
+.logos-channels{
+    width:40%;
+}
+
+.soundcloud{
+    grid-area:soundcloud;
+    font-weight:bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:sienna;
+    background-color:palevioletred;
+    border:none;
+    font-size:2rem;
+    position:center;
+    margin-bottom:20%;
+    margin-top:20%;
+}
+
+.instagram{
+    grid-area:instagram;
+    font-weight:bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:sienna;
+    background-color:palevioletred;
+    border:none;
+    font-size:2rem;
+    position:center;
+    margin-bottom:20%;
+    margin-top:20%;
+}
+
+.tiktok{
+    grid-area:tiktok;
+    font-weight:bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:sienna;
+    background-color:palevioletred;
+    border:none;
+    font-size:2rem;
+    position:center;
+    margin-bottom:20%;
+    margin-top:20%;
 }
 
 .article-text{
@@ -134,122 +203,6 @@ h2{
     padding-bottom:2%;
 }
 
-.spielauswahl-optionen{
-    font-size:2rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgb(37, 91, 93);
-    padding-left:20%;
-    padding-right:15%;
-    list-style:none;
-    text-align:center;
-    display:flex;
-    flex-direction:column;
-    flex-wrap:nowrap;
-    justify-content:space-between;
-}
-
-.centered{
-    display:flex;
-    flex-direction:column;
-    flex-wrap:nowrap;
-    justify-content:center;
-    justify-content:space-between;
-    padding-left:20%;
-    padding-right:15%;
-    margin-top:1%;
-    margin-bottom:1%;
-}
-
-.auswahl-buttons{
-    font-weight:bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:rgb(37, 91, 93);
-    font-size:100%;
-    block-size:13%;
-}
-
-.spiele{
-    display:flex;
-    flex-direction:column;
-    font-size:3rem;
-    text-align:center;
-    color:rgb(37, 91, 93);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top:10%;
-    margin-bottom:10%;
-    list-style:none;
-}
-
-.spielbeschreibungen{
-    font-size:2rem;
-    position:center;
-    padding-left:15%;
-    padding-right:15%;
-}
-
-.ueberschriften-spiele{
-    font-weight:bold;
-    font-style:italic;
-}
-
-.testen{
-    font-weight:bold;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:rgb(37, 91, 93);
-    block-size:10%;
-    font-size:50%;
-    margin-bottom:20%;
-    @include center;
-    transition:.6s;
-    overflow:hidden;
-    &:focus{
-        outline:0;
-    }
-    &:before{
-        content:'';
-        display:block;
-        position:absolute;
-        background:white;
-        opacity:.5;
-        filter:blur(30px);
-        transform:translateX(-100px)  skewX(-15deg);
-    }
-    &:after{
-        content:'';
-        display:block;
-        position:absolute;
-        background:rgba(128, 128, 128, 0.219);
-        opacity:0;
-        filter:blur(5px);
-        transform:translateX(-100px) skewX(-15deg);
-    }
-    &:hover{
-        background:rgba(128, 128, 128, 0.219);
-        border-color:black;
-        cursor:pointer;
-        &:before{
-            transform:translateX(300px)  skewX(-15deg);  
-            opacity:0.6;
-            transition:.7s;
-        }
-        &:after{
-            transform:translateX(300px) skewX(-15deg);  
-            opacity:1;
-            transition:.7s;
-        }
-    }
-}
-
-.rueckblick-section{
-    background-color:white;
-    padding-top:5%;
-    padding-bottom:5%;
-}
-
-.rueckblick{
-    width:100%;
-}
-
 footer{
     display:flex;
     flex-direction:column;
@@ -265,20 +218,24 @@ footer{
 
 @media screen and (min-width: 992px) {
     
-    header{
-        display:grid;
-        grid-template-columns:1fr 5fr;
-        grid-template-rows:2fr;
-        grid-template-areas:
-        "links mitte mitte mitte mitte mitte"
-        "rechts rechts rechts rechts rechts rechts";
+    body{
+        margin:0;
+        background-color:teal;
     }
 
-    .logo1{
-        grid-area:links;
-        width:13%;
-        margin-top:1vh;
+    header{
+        display:grid;
+        background-color:teal;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:1fr;
+        grid-template-areas:
+        "links mitte rechts";
         position:fixed;
+    }
+
+    .profile-image{
+        grid-area:links;
+        width: 30%;
     }
 
     h1{
@@ -288,77 +245,100 @@ footer{
         padding-bottom:2%;
         padding-left:20%;
     }
+
+    h2{
+        grid-area:rechts;
+        font-size:1.5rem;
+        padding-top:2%;
+        padding-bottom:2%;
+        padding-left:20%;
+    }
+
+    .content{
+        background-color:palevioletred;
+    }
+
+    .artist-introduction{
+        font-size:1.5rem;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:darkslategrey;
+        padding-left:20%;
+        padding-right:10%;
+        padding-top:15%;
+        padding-bottom:2%;
+    }
+
+    .books{
+        font-size:2rem;
+    }
     
-    .nav-links{
+    .website-rubriken{
         grid-area:rechts;
         display:flex;
         flex-direction:row;
         flex-wrap:nowrap;
         justify-content:space-between;
-        background-color:#333;
+        background-color:teal;
         color:white;
     }
     
-    .nav-links a{
+    .website-rubriken a{
         display:block;
         padding:15px;
         color:white;
         text-decoration:none;
     }
     
-    .nav-links a:hover{
-        background-color:#111;
-    }
-
-    .ueberschriften-sections{
-        padding-left:20%;
-        padding-right:15%;
-    }
-
-    .ueberschrift-section2{
-        padding-left:40%;
-        padding-right:15%;
+    .website-rubriken a:hover{
+        background-color:teal;
     }
 
     .article-text{
         padding-left:20%;
     }
 
-    .letsplay{
-        padding-left:40%;
+    .artist-description{
+    grid-area:mitte;
+    font-size:1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:darkslategrey;
+    padding-left:10%;
+    padding-right:15%;
+    padding-top:2%;
+    padding-bottom:2%;
+    }
+
+    .mymusic{
+        grid-area:mitte;
+        font-size:1rem;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:darkslategrey;
+        padding-left:10%;
         padding-right:15%;
+        padding-top:2%;
+        padding-bottom:2%;
     }
 
-    .spielauswahl-optionen{
-        padding-left:45%;
-        padding-right:40%;
-        list-style:none;
-        text-align:center;
-        display:flex;
-        flex-direction:column;
-        flex-wrap:nowrap;
-        justify-content:space-between;
+    .mywriting{
+        grid-area:mitte;
+        font-size:1rem;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:darkslategrey;
+        padding-left:10%;
+        padding-right:15%;
+        padding-top:2%;
+        padding-bottom:2%;
     }
 
-    .centered{
-        padding-left:45%;
-        padding-right:40%;
-    }
-
-    .spiele{
-        flex-direction:row;
-        flex-wrap:wrap;
-        justify-content:space-around;
-        padding-right:25%;
-        padding-left:30%;
-    }
-
-    .fotos-spiele{
-        width:1000px;
-    }
-
-    .testen{
-        font-size:80%;
+    .myprojects{
+        grid-area:mitte;
+        font-size:1rem;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:darkslategrey;
+        padding-left:10%;
+        padding-right:15%;
+        padding-top:2%;
+        padding-bottom:2%;
     }
 
     footer{
@@ -366,10 +346,5 @@ footer{
         flex-wrap:nowrap;
         justify-content: space-between;
         width:80vw;
-    }
-
-    .logo2{
-        z-index:1;
-        width:30%;
     }
 }
