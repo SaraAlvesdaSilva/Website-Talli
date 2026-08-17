@@ -231,6 +231,7 @@ footer{
         grid-template-areas:
         "links mitte rechts";
         position:fixed;
+        width:100vw;
     }
 
     .profile-image{
@@ -295,6 +296,7 @@ footer{
 
     .article-text{
         padding-left:20%;
+        background-color:palevioletred;
     }
 
     .artist-description{
@@ -302,6 +304,7 @@ footer{
     font-size:1rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:darkslategrey;
+    background-color:palevioletred;
     padding-left:10%;
     padding-right:15%;
     padding-top:2%;
