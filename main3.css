@@ -1,6 +1,6 @@
-.darkmode{
+.contact-page{
     color:white;
-    background-color:lightgrey;
+    background-color:palevioletred;
 }
 
 header{
@@ -11,14 +11,10 @@ header{
     "return lightmode lightmode lightmode lightmode lightmode";
 }
 
-.logo1{
-    width:100%;
-}
-
-.return{
+.zurück{
     grid-area:return;
     background-color:lightgrey;
-    width:60%;
+    width:20%;
     border:none;
     @include center;
     transition:.6s;
@@ -68,11 +64,11 @@ header{
     border-color:white;
 }
 
-.erstes-spiel{
-    font-size:3rem;
+.content{
+    font-size:6rem;
     font-style:italic;
     text-align:center;
-    color:rgb(37, 91, 93);
+    color:teal;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top:10%;
     margin-bottom:10%;
@@ -81,16 +77,16 @@ header{
 
 .ueberschriften{
     font-weight: bold;
-    font-size:3rem
+    font-size:6rem
 }
 
-.spielbeschreibungen{
-    font-size:2rem;
+.name{
+    font-size:6rem;
     padding-left:15%;
     padding-right:15%;
 }
 
-.super-Mario{
+.profile-picture{
     width:500px;
 }
 
@@ -102,15 +98,11 @@ header{
         grid-template-areas:
         "return lightmode lightmode lightmode lightmode lightmode";
     }
-    
-    .logo1{
-        width:40%;
-    }
 
-    .return{
+    .zurück{
         grid-area:return;
         background-color:lightgrey;
-        width:40%;
+        width:10%;
         border:none;
         @include center;
         transition:.6s;
@@ -162,7 +154,7 @@ header{
         font-size:3rem
     }
     
-    .spielbeschreibungen{
+    .name{
         font-size:2rem;
 
     }

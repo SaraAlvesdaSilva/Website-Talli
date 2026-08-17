@@ -11,6 +11,7 @@ header{
     grid-template-areas:
     "links mitte rechts";
     position:fixed;
+    border:palevioletred;
 }
 
 .content{
@@ -39,7 +40,7 @@ h2{
 }
 
 .artist-introduction{
-    font-size:1.5rem;
+    font-size:3rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:darkslategrey;
     padding-left:20%;
@@ -66,7 +67,7 @@ h2{
     color:sienna;
     background-color:palevioletred;
     border:none;
-    font-size:1rem;
+    font-size:5rem;
     position:center;
     margin-bottom:20%;
     margin-top:20%;
@@ -79,7 +80,7 @@ h2{
     color:sienna;
     background-color:palevioletred;
     border:none;
-    font-size:2rem;
+    font-size:5rem;
     position:center;
     margin-bottom:20%;
     margin-top:20%;
@@ -96,7 +97,7 @@ h2{
     color:sienna;
     background-color:palevioletred;
     border:none;
-    font-size:2rem;
+    font-size:5rem;
     position:center;
     margin-bottom:20%;
     margin-top:20%;
@@ -109,7 +110,7 @@ h2{
     color:sienna;
     background-color:palevioletred;
     border:none;
-    font-size:2rem;
+    font-size:5rem;
     position:center;
     margin-bottom:20%;
     margin-top:20%;
@@ -122,17 +123,17 @@ h2{
     color:sienna;
     background-color:palevioletred;
     border:none;
-    font-size:2rem;
+    font-size:5rem;
     position:center;
     margin-bottom:20%;
     margin-top:20%;
 }
 
 .article-text{
-    font-size:2rem;
+    font-size:3rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:darkslategrey;
-    background-color:palevioletred;
+    background-color:teal;
     padding-left:10%;
     padding-right:10%;
     padding-top:2%;
@@ -142,7 +143,9 @@ h2{
 .website-rubriken{
     grid-area:rechts;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
+    color:palevioletred;
+    background-color:teal;
+    font-size:4rem;
     list-style:none;
     padding-left:10%;
 }
@@ -155,12 +158,12 @@ h2{
 }
 
 .website-rubriken a:hover{
-    background-color:#111;
+    background-color:palevioletred;
 }
 
 .artist-description{
     grid-area:mitte;
-    font-size:1rem;
+    font-size:2rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:darkslategrey;
     padding-left:10%;
@@ -171,7 +174,7 @@ h2{
 
 .mymusic{
     grid-area:mitte;
-    font-size:1rem;
+    font-size:2rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:darkslategrey;
     padding-left:10%;
@@ -182,7 +185,7 @@ h2{
 
 .mywriting{
     grid-area:mitte;
-    font-size:1rem;
+    font-size:2rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:darkslategrey;
     padding-left:10%;
@@ -193,7 +196,7 @@ h2{
 
 .myprojects{
     grid-area:mitte;
-    font-size:1rem;
+    font-size:2rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:darkslategrey;
     padding-left:10%;
@@ -231,6 +234,7 @@ footer{
         "links mitte rechts";
         position:fixed;
         width:100vw;
+        border:palevioletred;
     }
 
     .profile-image{
@@ -259,17 +263,13 @@ footer{
     }
 
     .artist-introduction{
-        font-size:1.5rem;
+        font-size:3rem;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         color:darkslategrey;
         padding-left:20%;
         padding-right:10%;
         padding-top:15%;
         padding-bottom:2%;
-    }
-
-    .books{
-        font-size:2rem;
     }
     
     .website-rubriken{
@@ -279,7 +279,7 @@ footer{
         flex-wrap:nowrap;
         justify-content:space-between;
         background-color:teal;
-        color:white;
+        color:palevioletred;
     }
     
     .website-rubriken a{
@@ -290,7 +290,7 @@ footer{
     }
     
     .website-rubriken a:hover{
-        background-color:teal;
+        background-color:palevioletred;
     }
 
     .article-text{
@@ -300,10 +300,10 @@ footer{
 
     .artist-description{
     grid-area:mitte;
-    font-size:1rem;
+    font-size:3rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:darkslategrey;
-    background-color:palevioletred;
+    background-color:teal;
     padding-left:10%;
     padding-right:15%;
     padding-top:2%;
@@ -312,7 +312,7 @@ footer{
 
     .mymusic{
         grid-area:mitte;
-        font-size:1rem;
+        font-size:3rem;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         color:darkslategrey;
         padding-left:10%;
@@ -323,7 +323,7 @@ footer{
 
     .mywriting{
         grid-area:mitte;
-        font-size:1rem;
+        font-size:3rem;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         color:darkslategrey;
         padding-left:10%;
@@ -334,7 +334,7 @@ footer{
 
     .myprojects{
         grid-area:mitte;
-        font-size:1rem;
+        font-size:3rem;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         color:darkslategrey;
         padding-left:10%;
