@@ -20,7 +20,7 @@ header{
 
 .profile-image{
     grid-area:links;
-    width:100%;
+    width:60%;
 }
 
 h1{
@@ -278,7 +278,7 @@ footer{
     }
 
     .waves{
-        width:60%;
+        width:100%;
     }
     
     .website-rubriken{
