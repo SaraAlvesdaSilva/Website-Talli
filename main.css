@@ -20,7 +20,7 @@ header{
 
 .profile-image{
     grid-area:links;
-    width:50%;
+    width:60%;
 }
 
 h1{
@@ -49,6 +49,7 @@ h2{
 
 .waves{
     width:100%;
+    padding-top:10%;
 }
 
 .channels-links{
