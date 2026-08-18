@@ -43,10 +43,12 @@ h2{
     font-size:3rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:darkslategrey;
-    padding-left:5%;
-    padding-right:10%;
-    padding-top:20%;
     padding-bottom:2%;
+    padding-top:5%;
+}
+
+.waves{
+    width:100%;
 }
 
 .channels-links{
@@ -266,10 +268,12 @@ footer{
         font-size:3rem;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         color:darkslategrey;
-        padding-left:20%;
-        padding-right:10%;
-        padding-top:15%;
         padding-bottom:2%;
+        padding-top:10%;
+    }
+
+    .waves{
+        width:100%;
     }
     
     .website-rubriken{
