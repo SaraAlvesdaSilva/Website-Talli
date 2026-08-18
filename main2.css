@@ -69,13 +69,30 @@
 }
 
 .alltext{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:2fr;
-    grid-template-areas:
-    'short-stories book-projects';
-    padding-left:6%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:20px;
     background-color:wheat;
+    border:none;
+}
+
+.shortstory1-image{
+    width:45vw;
+    position:center;
+    padding-top:5%;
+}
+
+.shortstory2-image{
+    width:45vw;
+    position:center;
+    padding-top:5%;
+}
+
+.shortstory3-image{
+    width:45vw;
+    position:center;
+    padding-top:5%;
 }
 
 h1{
@@ -92,13 +109,6 @@ h2{
     font-weight:bold;
 }
 
-.waehrungsrechner{
-    grid-area:short-stories;
-    color:palevioletred;
-    font-size:2rem;
-    padding-top:50%;
-}
-
 button{
     font-weight:bold;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -107,6 +117,7 @@ button{
     font-size:100%;
     width:60%;
     position:center;
+    border:none;
 }
 
 @media screen and (min-width: 992px) {
@@ -173,12 +184,30 @@ button{
     }
     
     .alltext{
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows:2fr;
-        grid-template-areas:
-        'short-stories book-projects';
-        padding-left:6%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding:20px;
+        background-color:wheat;
+        border:none;
+    }
+
+    .shortstory1-image{
+        width:30vw;
+        position:center;
+        padding-top:10%;
+    }
+
+    .shortstory2-image{
+        width:30vw;
+        position:center;
+        padding-top:10%;
+    }
+
+    .shortstory3-image{
+        width:30vw;
+        position:center;
+        padding-top:10%;
     }
 
     h1{
@@ -191,13 +220,8 @@ button{
         font-size:3rem;
     }
 
-    .waehrungsrechner{
-        grid-area:short-stories;
-        font-size:3rem;
-        padding-top:30%;
-    }
-
     button{
         width:30%;
+        border:none;
     }
 }
