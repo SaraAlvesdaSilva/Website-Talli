@@ -96,17 +96,19 @@
 }
 
 h1{
-    grid-area:short-stories;
     color:palevioletred;
     font-size:2rem;
     font-weight:bold;
+    padding-left:20%;
+    padding-right:20%;
 }
 
 h2{
-    grid-area:book-projects;
     color:palevioletred;
     font-size:2rem;
     font-weight:bold;
+    padding-left:20%;
+    padding-right:20%;
 }
 
 button{
@@ -187,7 +189,6 @@ button{
         display:flex;
         flex-direction:column;
         align-items:center;
-        padding:20px;
         background-color:wheat;
         border:none;
     }
@@ -211,13 +212,15 @@ button{
     }
 
     h1{
-        grid-area:short-stories;
         font-size:3rem;
+        padding-left:30%;
+        padding-right:30%;
     }
     
     h2{
-        grid-area:book-projects;
         font-size:3rem;
+        padding-left:30%;
+        padding-right:30%;
     }
 
     button{
